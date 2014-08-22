@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-//testchange
-
 public class MyActivity extends ActionBarActivity {
 
     String first = "";
