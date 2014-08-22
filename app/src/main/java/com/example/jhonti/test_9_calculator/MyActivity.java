@@ -132,10 +132,10 @@ public class MyActivity extends ActionBarActivity {
     {
         if(selectedoperation == null)
         {
-            first += number;
+            first = checkTooManyDots(number, first);
         }else
         {
-            second += number;
+            second = checkTooManyDots(number, second);
         }
 
         if(selectedoperation == null)
@@ -143,6 +143,19 @@ public class MyActivity extends ActionBarActivity {
             setText(1);
         }else{
             setText(0);
+        }
+    }
+
+    //Makes sure user hasn't used two decimal points
+    private String checkTooManyDots(String number, String toaddto)
+    {
+        if(number.equals(".") && toaddto.contains("."))
+        {
+            return toaddto;
+        }
+        else
+        {
+            return toaddto += number;
         }
     }
 
