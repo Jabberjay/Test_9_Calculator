@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+//test commit
 
 public class MyActivity extends ActionBarActivity {
 
