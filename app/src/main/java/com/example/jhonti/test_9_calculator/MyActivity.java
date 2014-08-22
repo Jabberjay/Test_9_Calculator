@@ -126,7 +126,7 @@ public class MyActivity extends ActionBarActivity {
 
     /*
     When number is pressed, number is added to first or second
-    string based on whether operation has been chosen yet.
+    string based on whether operation has been chosen yet..
      */
     private void addToString(String number)
     {
